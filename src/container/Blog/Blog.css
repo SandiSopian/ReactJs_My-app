@@ -1,0 +1,38 @@
+.content {
+  width: 1000px;
+  margin: auto;
+  border: 1px solid black;
+  height: auto;
+}
+
+.img-s {
+  max-width: 210px;
+}
+
+.post {
+  width: 240px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  margin-left: 20px;
+  border: 2px solid black;
+  height: 600px;
+}
+
+.title {
+  text-align: center;
+}
+
+.delete {
+  width: 129px;
+  background-color: darkred;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-top: 20px;
+  outline: none;
+}
+.delete:hover {
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+}

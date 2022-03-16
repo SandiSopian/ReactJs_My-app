@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import KursusComponent from "../../component/KursusComponent/KursusComponent";
 import Product from "../Product/Product";
+import Blog from "../Blog/Blog";
 
 class Home extends Component {
   render() {
@@ -13,8 +14,13 @@ class Home extends Component {
       //     <KursusComponent />
       //   </div>
 
+      // <div>
+      //   <Product />
+      // </div>
       <div>
-        <Product />
+        <h2>Blogs</h2>
+        <hr></hr>
+        <Blog />
       </div>
     );
   }
