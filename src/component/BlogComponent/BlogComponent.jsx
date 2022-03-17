@@ -9,6 +9,9 @@ const BlogComponent = (props) => {
       <div className="article">
         <p className="title">{props.data.title}</p>
         <p className="title">{props.data.body}</p>
+        <button className="update" onClick={() => props.update(props.data)}>
+          Edit Post
+        </button>
         <button className="delete" onClick={() => props.delete(props.data.id)}>
           Delete Post
         </button>
