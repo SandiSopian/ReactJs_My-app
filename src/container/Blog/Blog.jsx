@@ -15,7 +15,7 @@ export default class Blog extends Component {
     isUpdated: false,
   };
 
-  // ketika page refresh maka data akan mengambil dari fungsi ini
+  // ketika page refresh maka data akan mengambil dari fungsi ini atau homepage data
   getPostApi = () => {
     // json-server --watch db.json --port 3004 : untuk menjalankan server API
     axios.get("http://localhost:3004/posts?_sort=id&_order=desc").then((result) => {
@@ -30,6 +30,7 @@ export default class Blog extends Component {
       (res) => {
         console.log(res);
         this.getPostApi();
+        // kondisi agar data hilang ketika data baru ditambahkan
         this.setState({
           isUpdated: false,
           formBlogPost: {
@@ -50,6 +51,7 @@ export default class Blog extends Component {
     axios.put(`http://localhost:3004/posts/${this.state.formBlogPost.id}`, this.state.formBlogPost).then((res) => {
       console.log(res);
       this.getPostApi();
+      // kondisi agar data hilang ketika data baru di update
       this.setState({
         isUpdated: false,
         formBlogPost: {

@@ -1,0 +1,25 @@
+.backg {
+  background-color: aqua;
+  height: 80px;
+  margin-top: -20px;
+}
+
+.link {
+  float: left;
+  list-style: none;
+  margin-right: 20px;
+  background-color: aliceblue;
+  padding: 15px 50px;
+  color: black;
+  margin-top: 20px;
+}
+
+.link:hover {
+  background-color: blue;
+  cursor: pointer;
+  color: black;
+}
+.ahref {
+  text-decoration: none;
+  color: black;
+}
